@@ -17,6 +17,15 @@ public class Fruit implements Serializable {
         this.price = price;
     }
 
+    public Fruit(int productId, String productName, String description, double price, String productImage) {
+        this.productId = productId;
+        this.productName = productName;
+        this.description = description;
+        this.price = price;
+        this.productImage = productImage;
+    }
+    
+
     // Getter methods for product properties
     public int getProductId() {
         return productId;

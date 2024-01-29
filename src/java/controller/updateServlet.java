@@ -87,6 +87,7 @@ public class updateServlet extends HttpServlet {
     //    processRequest(request, response);
     String id_raw = request.getParameter("id");
     String name = request.getParameter("name");
+    String image = request.getParameter("image");
     String description = request.getParameter("description");
     String price_raw = request.getParameter("price");
     int id; 
@@ -94,7 +95,7 @@ public class updateServlet extends HttpServlet {
         try {
             id = Integer.parseInt(id_raw);
             price = Double.parseDouble(price_raw);
-            Fruit f = new Fruit(id, name, description, price);
+            Fruit f = new Fruit(id, name, description, price, image);
             FruitDB.update(f);
             response.sendRedirect("list");
         } catch (NumberFormatException e) {

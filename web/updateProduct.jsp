@@ -29,6 +29,10 @@
                     <td><input type="text" name="name" value="<%= f.getProductName()%>"/></td>
                 </tr>
                 <tr>
+                    <td>Product Image:</td>
+                    <td><input type="text" name="image" value="<%= f.getProductImage() %>"/></td>
+                </tr>
+                <tr>
                     <td>Description:</td><td><input type="text" name="description" value="<%= f.getDescription()%>"/></td>
                 </tr>
                 <tr>

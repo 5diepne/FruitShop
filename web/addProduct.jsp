@@ -24,6 +24,9 @@
                     <td><input type="text" name="name"/></td>
                 </tr>
                 <tr>
+                    <td>Image Product:</td><td><input type="text" name="image"/></td>
+                </tr>
+                <tr>
                     <td>Description:</td><td><input type="text" name="description"/></td>
                 </tr>
                 <tr>
